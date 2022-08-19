@@ -1,44 +1,533 @@
-2022-08-18 18:29:39.574  INFO 7404 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 7404 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
-2022-08-18 18:29:39.581  INFO 7404 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-08-18 18:29:44.050  INFO 7404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
-2022-08-18 18:29:44.097  INFO 7404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-18 18:29:44.098  INFO 7404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-18 18:29:44.441  INFO 7404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-18 18:29:44.441  INFO 7404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4549 ms
-2022-08-18 18:29:44.743  INFO 7404 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
-2022-08-18 18:29:48.535  INFO 7404 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
-2022-08-18 18:29:49.367  INFO 7404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
-2022-08-18 18:29:49.369  INFO 7404 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
-2022-08-18 18:29:49.843  INFO 7404 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
-2022-08-18 18:29:49.896  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
-2022-08-18 18:29:49.897  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
-2022-08-18 18:29:49.897  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
-2022-08-18 18:29:49.975  INFO 7404 --- [main] quickfix.SocketInitiator                 : SessionTimer started
-2022-08-18 18:29:49.977  INFO 7404 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
-2022-08-18 18:29:49.978  INFO 7404 --- [QFJ Message Processor] quickfix.SocketInitiator                 : Started QFJ Message Processor
-2022-08-18 18:29:49.980  INFO 7404 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
-2022-08-18 18:29:49.981  INFO 7404 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
-2022-08-18 18:29:50.020  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
-2022-08-18 18:29:50.020  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
-2022-08-18 18:29:50.021  INFO 7404 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
-2022-08-18 18:29:50.025  INFO 7404 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
-2022-08-18 18:29:50.026  INFO 7404 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
-2022-08-18 18:29:50.049  INFO 7404 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 14.302 seconds (JVM running for 16.222)
-2022-08-18 18:29:50.502  INFO 7404 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:51947
-2022-08-18 18:30:47.902  INFO 7404 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-18 18:30:47.903  INFO 7404 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-18 18:30:47.904  INFO 7404 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-18 18:31:33.920 ERROR 7404 --- [http-nio-8089-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException] with root cause
-java.lang.RuntimeException: null
-	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
-	at com.rodrigo.testefix.controller.TesteFixController.sendMessageToClient(TesteFixController.java:41) ~[classes/:na]
+2022-08-19 10:33:19.886  INFO 4460 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 4460 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 10:33:19.898  INFO 4460 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:33:24.511  INFO 4460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 10:33:24.531  INFO 4460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:33:24.531  INFO 4460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:33:25.239  INFO 4460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:33:25.239  INFO 4460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5162 ms
+2022-08-19 10:33:25.864  INFO 4460 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 10:33:29.249  INFO 4460 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 10:33:30.014  INFO 4460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 10:33:30.016  INFO 4460 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:33:30.463  INFO 4460 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:33:30.516  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:33:30.516  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:33:30.516  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:33:30.569  INFO 4460 --- [main] quickfix.SocketInitiator                 : SessionTimer started
+2022-08-19 10:33:30.572  INFO 4460 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:33:30.572  INFO 4460 --- [QFJ Message Processor] quickfix.SocketInitiator                 : Started QFJ Message Processor
+2022-08-19 10:33:30.574  INFO 4460 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:33:30.575  INFO 4460 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 10:33:30.626  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:33:30.627  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:33:30.627  INFO 4460 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:33:30.633  INFO 4460 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 10:33:30.634  INFO 4460 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 10:33:30.673  INFO 4460 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 13.819 seconds (JVM running for 17.498)
+2022-08-19 10:33:31.089  INFO 4460 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:53952
+2022-08-19 10:34:48.467  INFO 4460 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:34:48.468  INFO 4460 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 10:34:48.469  INFO 4460 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-19 10:34:55.931 ERROR 4460 --- [http-nio-8089-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is quickfix.SessionNotFound] with root cause
+quickfix.SessionNotFound: null
+	at quickfix.Session.sendToTarget(Session.java:701) ~[quickfixj-core-2.3.1.jar:2.3.1]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:82) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-2022-08-18 18:32:19.501 ERROR 7404 --- [http-nio-8089-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException] with root cause
-java.lang.RuntimeException: null
-	at java.base/java.util.Optional.orElseThrow(Optional.java:408) ~[na:na]
-	at com.rodrigo.testefix.controller.TesteFixController.sendMessageToServer(TesteFixController.java:56) ~[classes/:na]
+2022-08-19 10:35:21.786  INFO 4460 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:35:21.787  INFO 4460 --- [SpringApplicationShutdownHook] quickfix.SocketInitiator                 : Logging out all sessions
+2022-08-19 10:35:22.663  INFO 4460 --- [SpringApplicationShutdownHook] quickfix.SocketInitiator                 : SessionTimer canceled
+2022-08-19 10:35:22.663  INFO 4460 --- [QFJ Message Processor] quickfix.SocketInitiator                 : Stopped QFJ Message Processor
+2022-08-19 10:35:22.664  INFO 4460 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:35:22.664  INFO 4460 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 10:35:22.670  INFO 4460 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 10:35:22.670  INFO 4460 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 10:35:22.670  INFO 4460 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 10:35:33.141  INFO 6092 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 6092 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 10:35:33.148  INFO 6092 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:35:35.572  INFO 6092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 10:35:35.603  INFO 6092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:35:35.604  INFO 6092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:35:35.838  INFO 6092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:35:35.839  INFO 6092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2558 ms
+2022-08-19 10:35:36.085  INFO 6092 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 10:35:38.731  INFO 6092 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 10:35:39.439  INFO 6092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 10:35:39.441  INFO 6092 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:35:39.627  INFO 6092 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:35:39.653  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:35:39.654  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:35:39.655  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:35:39.716  INFO 6092 --- [main] quickfix.SocketInitiator                 : SessionTimer started
+2022-08-19 10:35:39.721  INFO 6092 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:35:39.721  INFO 6092 --- [QFJ Message Processor] quickfix.SocketInitiator                 : Started QFJ Message Processor
+2022-08-19 10:35:39.723  INFO 6092 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:35:39.726  INFO 6092 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 10:35:39.740  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:35:39.740  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:35:39.740  INFO 6092 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:35:39.745  INFO 6092 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 10:35:39.747  INFO 6092 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 10:35:39.763  INFO 6092 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 7.648 seconds (JVM running for 9.749)
+2022-08-19 10:35:40.242  INFO 6092 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54019
+2022-08-19 10:35:50.239  INFO 6092 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:35:50.240  INFO 6092 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 10:35:50.241  INFO 6092 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-19 10:35:50.340 ERROR 6092 --- [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is quickfix.SessionNotFound] with root cause
+quickfix.SessionNotFound: null
+	at quickfix.Session.sendToTarget(Session.java:701) ~[quickfixj-core-2.3.1.jar:2.3.1]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:83) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2022-08-19 10:39:55.659 ERROR 6092 --- [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is quickfix.SessionNotFound] with root cause
+quickfix.SessionNotFound: null
+	at quickfix.Session.sendToTarget(Session.java:701) ~[quickfixj-core-2.3.1.jar:2.3.1]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2022-08-19 10:39:55.763  INFO 6092 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:39:55.764  INFO 6092 --- [SpringApplicationShutdownHook] quickfix.SocketInitiator                 : Logging out all sessions
+2022-08-19 10:39:55.772  INFO 6092 --- [SpringApplicationShutdownHook] quickfix.SocketInitiator                 : SessionTimer canceled
+2022-08-19 10:39:55.772  INFO 6092 --- [QFJ Message Processor] quickfix.SocketInitiator                 : Stopped QFJ Message Processor
+2022-08-19 10:39:55.773  INFO 6092 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:39:55.774  INFO 6092 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 10:39:55.781  INFO 6092 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 10:39:55.781  INFO 6092 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 10:39:55.782  INFO 6092 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 10:40:35.708  INFO 14104 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 14104 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 10:40:35.734  INFO 14104 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:40:38.040  INFO 14104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 10:40:38.059  INFO 14104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:40:38.060  INFO 14104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:40:38.235  INFO 14104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:40:38.236  INFO 14104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2353 ms
+2022-08-19 10:40:38.442  INFO 14104 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 10:40:41.589  INFO 14104 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 10:40:42.224  INFO 14104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 10:40:42.226  INFO 14104 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:40:42.385  INFO 14104 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:40:42.406  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:40:42.406  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:40:42.407  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:40:42.485  INFO 14104 --- [main] quickfix.ThreadedSocketInitiator         : SessionTimer started
+2022-08-19 10:40:42.486  INFO 14104 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:40:42.489  INFO 14104 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:40:42.492  INFO 14104 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 10:40:42.511  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:40:42.512  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:40:42.512  INFO 14104 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:40:42.516  INFO 14104 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 10:40:42.520  INFO 14104 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 10:40:42.537  INFO 14104 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 8.055 seconds (JVM running for 9.034)
+2022-08-19 10:40:43.013  INFO 14104 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54132
+2022-08-19 10:40:58.204  INFO 14104 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:40:58.205  INFO 14104 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 10:40:58.208  INFO 14104 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-19 10:41:01.526 ERROR 14104 --- [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is quickfix.SessionNotFound] with root cause
+quickfix.SessionNotFound: null
+	at quickfix.Session.sendToTarget(Session.java:701) ~[quickfixj-core-2.3.1.jar:2.3.1]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2022-08-19 10:43:32.520  INFO 14104 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:43:32.520  INFO 14104 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : Logging out all sessions
+2022-08-19 10:43:32.526  INFO 14104 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : SessionTimer canceled
+2022-08-19 10:43:32.527  INFO 14104 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 10:43:32.528  INFO 14104 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 10:43:32.537  INFO 14104 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 10:43:32.539  INFO 14104 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 10:43:32.539  INFO 14104 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 10:43:40.151  INFO 15728 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 15728 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 10:43:40.169  INFO 15728 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 10:43:42.522  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 10:43:42.542  INFO 15728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 10:43:42.543  INFO 15728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 10:43:44.201  INFO 15728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 10:43:44.202  INFO 15728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3899 ms
+2022-08-19 10:43:44.457  INFO 15728 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 10:43:47.107  INFO 15728 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 10:43:47.714  INFO 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 10:43:47.716  INFO 15728 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:43:47.876  INFO 15728 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:43:47.894  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:43:47.895  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:43:47.895  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:43:47.956  INFO 15728 --- [main] quickfix.ThreadedSocketInitiator         : SessionTimer started
+2022-08-19 10:43:47.957  INFO 15728 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 10:43:47.960  INFO 15728 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 10:43:47.963  INFO 15728 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 10:43:47.981  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 10:43:47.981  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 10:43:47.981  INFO 15728 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 10:43:47.985  INFO 15728 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 10:43:47.988  INFO 15728 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 10:43:48.003  INFO 15728 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 8.967 seconds (JVM running for 9.93)
+2022-08-19 10:43:48.473  INFO 15728 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54216
+2022-08-19 10:43:58.630  INFO 15728 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 10:43:58.631  INFO 15728 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 10:43:58.632  INFO 15728 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-19 10:43:58.725 ERROR 15728 --- [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.allune.quickfixj.spring.boot.starter.template.SessionNotFoundException: Session not found: FIX.4.4:EXEC->BANZAI] with root cause
+io.allune.quickfixj.spring.boot.starter.template.SessionNotFoundException: Session not found: FIX.4.4:EXEC->BANZAI
+	at io.allune.quickfixj.spring.boot.starter.template.QuickFixJTemplate.doSend(QuickFixJTemplate.java:124) ~[quickfixj-spring-boot-starter-2.11.0.jar:2.11.0]
+	at io.allune.quickfixj.spring.boot.starter.template.QuickFixJTemplate.send(QuickFixJTemplate.java:118) ~[quickfixj-spring-boot-starter-2.11.0.jar:2.11.0]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+2022-08-19 12:05:06.350  INFO 15728 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 12:05:06.353  INFO 15728 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : Logging out all sessions
+2022-08-19 12:05:07.030  INFO 15728 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : SessionTimer canceled
+2022-08-19 12:05:07.032  INFO 15728 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 12:05:07.033  INFO 15728 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 12:05:07.058  INFO 15728 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 12:05:07.059  INFO 15728 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 12:05:07.060  INFO 15728 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 17:34:39.942  INFO 11920 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 11920 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 17:34:39.955  INFO 11920 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 17:34:44.868  INFO 11920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 17:34:44.899  INFO 11920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 17:34:44.900  INFO 11920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 17:34:45.441  INFO 11920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 17:34:45.441  INFO 11920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5277 ms
+2022-08-19 17:34:45.693  INFO 11920 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 17:34:50.786  INFO 11920 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 17:34:51.591  INFO 11920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 17:34:51.594  INFO 11920 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 17:34:52.204  INFO 11920 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 17:34:52.223  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 17:34:52.224  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 17:34:52.225  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 17:34:52.291  INFO 11920 --- [main] quickfix.ThreadedSocketInitiator         : SessionTimer started
+2022-08-19 17:34:52.292  INFO 11920 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 17:34:52.293  INFO 11920 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 17:34:52.297  INFO 11920 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 17:34:52.326  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 17:34:52.327  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 17:34:52.327  INFO 11920 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 17:34:52.332  INFO 11920 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 17:34:52.336  INFO 11920 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 17:34:52.354  INFO 11920 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 14.211 seconds (JVM running for 18.187)
+2022-08-19 17:34:52.811  INFO 11920 --- [NioProcessor-11] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56454
+2022-08-19 17:36:16.280  INFO 11920 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 17:36:16.281  INFO 11920 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 17:36:16.284  INFO 11920 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-19 17:40:21.455 ERROR 11920 --- [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.allune.quickfixj.spring.boot.starter.template.SessionNotFoundException: Session not found: FIX.4.4:EXEC->BANZAI] with root cause
+io.allune.quickfixj.spring.boot.starter.template.SessionNotFoundException: Session not found: FIX.4.4:EXEC->BANZAI
+	at io.allune.quickfixj.spring.boot.starter.template.QuickFixJTemplate.doSend(QuickFixJTemplate.java:124) ~[quickfixj-spring-boot-starter-2.11.0.jar:2.11.0]
+	at io.allune.quickfixj.spring.boot.starter.template.QuickFixJTemplate.send(QuickFixJTemplate.java:118) ~[quickfixj-spring-boot-starter-2.11.0.jar:2.11.0]
+	at com.rodrigo.testefix.controller.TesteFixController.executionReport(TesteFixController.java:84) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+2022-08-19 17:40:22.417  INFO 11920 --- [NioProcessor-13] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56563
+2022-08-19 17:43:10.281  INFO 11920 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 17:43:10.281  INFO 11920 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : Logging out all sessions
+2022-08-19 17:43:10.398  INFO 11920 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : SessionTimer canceled
+2022-08-19 17:43:10.399  INFO 11920 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 17:43:10.399  INFO 11920 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 17:43:10.405  INFO 11920 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 17:43:10.405  INFO 11920 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 17:43:10.406  INFO 11920 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 17:43:18.762  INFO 4852 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 4852 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 17:43:18.768  INFO 4852 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 17:43:21.220  INFO 4852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 17:43:21.242  INFO 4852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 17:43:21.243  INFO 4852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 17:43:21.546  INFO 4852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 17:43:21.546  INFO 4852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2666 ms
+2022-08-19 17:43:21.757  INFO 4852 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 17:43:24.545  INFO 4852 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 17:43:25.179  INFO 4852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 17:43:25.181  INFO 4852 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 17:43:25.493  INFO 4852 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 17:43:25.510  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 17:43:25.510  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 17:43:25.510  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 17:43:25.576  INFO 4852 --- [main] quickfix.ThreadedSocketInitiator         : SessionTimer started
+2022-08-19 17:43:25.577  INFO 4852 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 17:43:25.579  INFO 4852 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 17:43:25.731  INFO 4852 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.4:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 17:43:25.734  INFO 4852 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 17:43:25.755  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 17:43:25.755  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 17:43:25.756  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 17:43:25.764  INFO 4852 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 17:43:25.779  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 17:43:25.779  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 17:43:25.779  INFO 4852 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 17:43:25.782  INFO 4852 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9880 for session(s) [FIX.4.4:EXEC->BANZAI]
+2022-08-19 17:43:25.789  INFO 4852 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 17:43:25.809  INFO 4852 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 8.341 seconds (JVM running for 9.599)
+2022-08-19 17:43:26.095  INFO 4852 --- [NioProcessor-12] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56624
+2022-08-19 17:43:51.767  INFO 4852 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 17:43:51.767  INFO 4852 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 17:43:51.768  INFO 4852 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-19 17:47:10.856  INFO 4852 --- [NioProcessor-13] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56722
+2022-08-19 17:47:10.972  INFO 4852 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 17:47:10.973  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : Logging out all sessions
+2022-08-19 17:47:11.641  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : SessionTimer canceled
+2022-08-19 17:47:11.642  INFO 4852 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 17:47:11.642  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 17:47:11.647  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 17:47:11.652  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9880
+2022-08-19 17:47:11.652  INFO 4852 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 17:47:11.653  INFO 4852 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
+2022-08-19 18:13:04.955  INFO 9804 --- [main] c.rodrigo.testefix.TesteFixApplication   : Starting TesteFixApplication using Java 11.0.12 on Rodrigo with PID 9804 (C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix\target\classes started by rodri in C:\Users\rodri\Desktop\Desenvolvimento\Projetos\teste-fix)
+2022-08-19 18:13:04.975  INFO 9804 --- [main] c.rodrigo.testefix.TesteFixApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-19 18:13:08.076  INFO 9804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-08-19 18:13:08.099  INFO 9804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-19 18:13:08.100  INFO 9804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 18:13:08.553  INFO 9804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-19 18:13:08.553  INFO 9804 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3417 ms
+2022-08-19 18:13:08.798  INFO 9804 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-server.cfg'
+2022-08-19 18:13:12.209  INFO 9804 --- [main] i.a.q.s.b.s.c.SessionSettingsLocator     : Loading settings from 'classpath:/quickfixj-client.cfg'
+2022-08-19 18:13:13.063  INFO 9804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-08-19 18:13:13.065  INFO 9804 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 18:13:13.444  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:BANZAI->EXEC] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.485  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.485  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.486  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.555  INFO 9804 --- [main] quickfix.ThreadedSocketInitiator         : SessionTimer started
+2022-08-19 18:13:13.555  INFO 9804 --- [main] i.a.q.s.b.s.connection.ConnectorManager  : start: Starting ConnectorManager
+2022-08-19 18:13:13.602  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.2:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.605  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIX.4.2:EXEC->BANZAI
+2022-08-19 18:13:13.606  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.607  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:13.617  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIXT.1.1:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.618  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIXT.1.1:EXEC->BANZAI
+2022-08-19 18:13:13.630  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.0:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.631  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIX.4.0:EXEC->BANZAI
+2022-08-19 18:13:13.682  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.3:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.684  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIX.4.3:EXEC->BANZAI
+2022-08-19 18:13:13.777  INFO 9804 --- [main] quickfix.DefaultSessionSchedule          : [FIX.4.4:EXEC->BANZAI] daily, 00:00:00-UTC - 00:00:00-UTC
+2022-08-19 18:13:13.778  INFO 9804 --- [main] c.r.testefix.listener.TesteFixListener   : onCreate: SessionId=FIX.4.4:EXEC->BANZAI
+2022-08-19 18:13:13.779  INFO 9804 --- [main] quickfix.SocketAcceptor                  : SessionTimer started
+2022-08-19 18:13:13.798  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.799  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.799  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.805  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9876 for session(s) [FIX.4.0:EXEC->BANZAI]
+2022-08-19 18:13:13.815  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.815  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.815  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.817  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9877 for session(s) [FIX.4.1:EXEC->BANZAI]
+2022-08-19 18:13:13.888  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.889  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.889  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.891  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:EXEC->BANZAI]
+2022-08-19 18:13:13.902  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.903  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.903  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.905  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9879 for session(s) [FIX.4.3:EXEC->BANZAI]
+2022-08-19 18:13:13.917  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.917  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.918  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.921  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9880 for session(s) [FIX.4.4:EXEC->BANZAI]
+2022-08-19 18:13:13.933  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketTcpNoDelay=true
+2022-08-19 18:13:13.934  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWrites=false
+2022-08-19 18:13:13.934  INFO 9804 --- [main] quickfix.mina.NetworkingOptions          : Socket option: SocketSynchronousWriteTimeout=30000
+2022-08-19 18:13:13.936  INFO 9804 --- [main] quickfix.SocketAcceptor                  : Listening for connections at 0.0.0.0/0.0.0.0:9881 for session(s) [FIXT.1.1:EXEC->BANZAI]
+2022-08-19 18:13:13.941  INFO 9804 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Started QFJ Message Processor
+2022-08-19 18:13:13.961  INFO 9804 --- [main] c.rodrigo.testefix.TesteFixApplication   : Started TesteFixApplication in 11.018 seconds (JVM running for 12.432)
+2022-08-19 18:13:14.077  INFO 9804 --- [NioProcessor-21] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56964
+2022-08-19 18:13:14.644  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=60|35=A|34=1|49=BANZAI|52=20220819-21:13:14|56=EXEC|98=0|108=5|10=219|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:14.644  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=60|35=A|34=1|49=BANZAI|52=20220819-21:13:14|56=EXEC|98=0|108=5|10=219|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:14.646  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:14.647  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : onLogon: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:19.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=2|49=BANZAI|52=20220819-21:13:19|56=EXEC|10=236|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:19.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=2|49=BANZAI|52=20220819-21:13:19|56=EXEC|10=236|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:19.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:24.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=3|49=BANZAI|52=20220819-21:13:24|56=EXEC|10=233|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:24.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=3|49=BANZAI|52=20220819-21:13:24|56=EXEC|10=233|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:24.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:29.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=4|49=BANZAI|52=20220819-21:13:29|56=EXEC|10=239|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:29.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=4|49=BANZAI|52=20220819-21:13:29|56=EXEC|10=239|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:29.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:34.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=5|49=BANZAI|52=20220819-21:13:34|56=EXEC|10=236|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:34.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=5|49=BANZAI|52=20220819-21:13:34|56=EXEC|10=236|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:34.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:39.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=6|49=BANZAI|52=20220819-21:13:39|56=EXEC|10=242|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:39.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=6|49=BANZAI|52=20220819-21:13:39|56=EXEC|10=242|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:39.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:44.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=7|49=BANZAI|52=20220819-21:13:44|56=EXEC|10=239|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:44.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=7|49=BANZAI|52=20220819-21:13:44|56=EXEC|10=239|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:45.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:49.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=8|49=BANZAI|52=20220819-21:13:49|56=EXEC|10=245|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:49.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=8|49=BANZAI|52=20220819-21:13:49|56=EXEC|10=245|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:50.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:54.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=9|49=BANZAI|52=20220819-21:13:54|56=EXEC|10=242|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:54.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=49|35=0|34=9|49=BANZAI|52=20220819-21:13:54|56=EXEC|10=242|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:55.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:59.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=10|49=BANZAI|52=20220819-21:13:59|56=EXEC|10=023|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:13:59.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=10|49=BANZAI|52=20220819-21:13:59|56=EXEC|10=023|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:00.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:04.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=11|49=BANZAI|52=20220819-21:14:04|56=EXEC|10=015|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:04.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=11|49=BANZAI|52=20220819-21:14:04|56=EXEC|10=015|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:06.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:09.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=12|49=BANZAI|52=20220819-21:14:09|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:09.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=12|49=BANZAI|52=20220819-21:14:09|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:11.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:14.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=13|49=BANZAI|52=20220819-21:14:14|56=EXEC|10=018|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:14.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=13|49=BANZAI|52=20220819-21:14:14|56=EXEC|10=018|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:16.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:19.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=14|49=BANZAI|52=20220819-21:14:19|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:19.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=14|49=BANZAI|52=20220819-21:14:19|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:21.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:24.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=15|49=BANZAI|52=20220819-21:14:24|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:24.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=15|49=BANZAI|52=20220819-21:14:24|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:27.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:29.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=16|49=BANZAI|52=20220819-21:14:29|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:29.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=16|49=BANZAI|52=20220819-21:14:29|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:33.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:34.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=17|49=BANZAI|52=20220819-21:14:34|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:34.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=17|49=BANZAI|52=20220819-21:14:34|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:38.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:39.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=18|49=BANZAI|52=20220819-21:14:39|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:39.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=18|49=BANZAI|52=20220819-21:14:39|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:43.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:44.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=19|49=BANZAI|52=20220819-21:14:44|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:44.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=19|49=BANZAI|52=20220819-21:14:44|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:48.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:49.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=20|49=BANZAI|52=20220819-21:14:49|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:49.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=20|49=BANZAI|52=20220819-21:14:49|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:53.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:54.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=21|49=BANZAI|52=20220819-21:14:54|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:54.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=21|49=BANZAI|52=20220819-21:14:54|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:58.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:59.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=22|49=BANZAI|52=20220819-21:14:59|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:14:59.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=22|49=BANZAI|52=20220819-21:14:59|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:00.378  INFO 9804 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 18:15:00.378  INFO 9804 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-19 18:15:00.380  INFO 9804 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-19 18:15:00.490  INFO 9804 --- [http-nio-8089-exec-1] c.r.testefix.listener.TesteFixListener   : toApp: SessionId=FIX.4.4:EXEC->BANZAI
+2022-08-19 18:15:03.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:04.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=23|49=BANZAI|52=20220819-21:15:04|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:04.573  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=23|49=BANZAI|52=20220819-21:15:04|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:08.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:09.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=24|49=BANZAI|52=20220819-21:15:09|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:09.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=24|49=BANZAI|52=20220819-21:15:09|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:13.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:14.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=25|49=BANZAI|52=20220819-21:15:14|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:14.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=25|49=BANZAI|52=20220819-21:15:14|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:17.042  INFO 9804 --- [http-nio-8089-exec-2] c.r.testefix.listener.TesteFixListener   : toApp: SessionId=FIX.4.4:EXEC->BANZAI
+2022-08-19 18:15:18.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:19.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=26|49=BANZAI|52=20220819-21:15:19|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:19.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=26|49=BANZAI|52=20220819-21:15:19|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:23.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:24.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=27|49=BANZAI|52=20220819-21:15:24|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:24.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=27|49=BANZAI|52=20220819-21:15:24|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:28.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:29.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=28|49=BANZAI|52=20220819-21:15:29|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:29.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=28|49=BANZAI|52=20220819-21:15:29|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:33.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:34.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=29|49=BANZAI|52=20220819-21:15:34|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:34.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=29|49=BANZAI|52=20220819-21:15:34|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:36.474  INFO 9804 --- [http-nio-8089-exec-3] c.r.testefix.listener.TesteFixListener   : toApp: SessionId=FIX.4.4:EXEC->BANZAI
+2022-08-19 18:15:38.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:39.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=30|49=BANZAI|52=20220819-21:15:39|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:39.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=30|49=BANZAI|52=20220819-21:15:39|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:43.780  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:44.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=31|49=BANZAI|52=20220819-21:15:44|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:44.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=31|49=BANZAI|52=20220819-21:15:44|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:44.922  INFO 9804 --- [http-nio-8089-exec-4] c.r.testefix.listener.TesteFixListener   : toApp: SessionId=FIX.4.4:EXEC->BANZAI
+2022-08-19 18:15:48.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:49.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=32|49=BANZAI|52=20220819-21:15:49|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:49.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=32|49=BANZAI|52=20220819-21:15:49|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:53.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:54.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=33|49=BANZAI|52=20220819-21:15:54|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:54.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=33|49=BANZAI|52=20220819-21:15:54|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:58.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:59.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=34|49=BANZAI|52=20220819-21:15:59|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:15:59.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=34|49=BANZAI|52=20220819-21:15:59|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:03.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:05.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=35|49=BANZAI|52=20220819-21:16:05|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:05.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=35|49=BANZAI|52=20220819-21:16:05|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:08.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:10.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=36|49=BANZAI|52=20220819-21:16:10|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:10.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=36|49=BANZAI|52=20220819-21:16:10|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:13.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:15.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=37|49=BANZAI|52=20220819-21:16:15|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:15.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=37|49=BANZAI|52=20220819-21:16:15|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:18.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:20.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=38|49=BANZAI|52=20220819-21:16:20|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:20.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=38|49=BANZAI|52=20220819-21:16:20|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:23.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:25.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=39|49=BANZAI|52=20220819-21:16:25|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:25.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=39|49=BANZAI|52=20220819-21:16:25|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:28.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:30.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=40|49=BANZAI|52=20220819-21:16:30|56=EXEC|10=018|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:30.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=40|49=BANZAI|52=20220819-21:16:30|56=EXEC|10=018|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:33.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:35.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=41|49=BANZAI|52=20220819-21:16:35|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:35.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=41|49=BANZAI|52=20220819-21:16:35|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:38.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:40.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=42|49=BANZAI|52=20220819-21:16:40|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:40.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=42|49=BANZAI|52=20220819-21:16:40|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:43.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:45.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=43|49=BANZAI|52=20220819-21:16:45|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:45.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=43|49=BANZAI|52=20220819-21:16:45|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:48.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:50.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=44|49=BANZAI|52=20220819-21:16:50|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:50.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=44|49=BANZAI|52=20220819-21:16:50|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:53.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:55.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=45|49=BANZAI|52=20220819-21:16:55|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:55.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=45|49=BANZAI|52=20220819-21:16:55|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:16:58.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:00.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=46|49=BANZAI|52=20220819-21:17:00|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:00.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=46|49=BANZAI|52=20220819-21:17:00|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:03.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:05.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=47|49=BANZAI|52=20220819-21:17:05|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:05.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=47|49=BANZAI|52=20220819-21:17:05|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:08.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:10.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=48|49=BANZAI|52=20220819-21:17:10|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:10.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=48|49=BANZAI|52=20220819-21:17:10|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:13.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:15.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=49|49=BANZAI|52=20220819-21:17:15|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:15.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=49|49=BANZAI|52=20220819-21:17:15|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:18.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:20.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=50|49=BANZAI|52=20220819-21:17:20|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:20.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=50|49=BANZAI|52=20220819-21:17:20|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:23.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:25.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=51|49=BANZAI|52=20220819-21:17:25|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:25.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=51|49=BANZAI|52=20220819-21:17:25|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:28.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:30.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=52|49=BANZAI|52=20220819-21:17:30|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:30.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=52|49=BANZAI|52=20220819-21:17:30|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:33.780  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:35.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=53|49=BANZAI|52=20220819-21:17:35|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:35.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=53|49=BANZAI|52=20220819-21:17:35|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:38.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:40.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=54|49=BANZAI|52=20220819-21:17:40|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:40.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=54|49=BANZAI|52=20220819-21:17:40|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:43.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:45.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=55|49=BANZAI|52=20220819-21:17:45|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:45.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=55|49=BANZAI|52=20220819-21:17:45|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:48.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:51.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=56|49=BANZAI|52=20220819-21:17:51|56=EXEC|10=029|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:51.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=56|49=BANZAI|52=20220819-21:17:51|56=EXEC|10=029|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:53.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:56.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=57|49=BANZAI|52=20220819-21:17:56|56=EXEC|10=035|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:56.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=57|49=BANZAI|52=20220819-21:17:56|56=EXEC|10=035|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:17:58.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:01.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=58|49=BANZAI|52=20220819-21:18:01|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:01.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=58|49=BANZAI|52=20220819-21:18:01|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:03.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:06.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=59|49=BANZAI|52=20220819-21:18:06|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:06.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=59|49=BANZAI|52=20220819-21:18:06|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:08.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:11.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=60|49=BANZAI|52=20220819-21:18:11|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:11.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=60|49=BANZAI|52=20220819-21:18:11|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:13.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:16.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=61|49=BANZAI|52=20220819-21:18:16|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:16.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=61|49=BANZAI|52=20220819-21:18:16|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:18.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:21.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=62|49=BANZAI|52=20220819-21:18:21|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:21.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=62|49=BANZAI|52=20220819-21:18:21|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:23.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:26.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=63|49=BANZAI|52=20220819-21:18:26|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:26.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=63|49=BANZAI|52=20220819-21:18:26|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:28.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:31.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=64|49=BANZAI|52=20220819-21:18:31|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:31.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=64|49=BANZAI|52=20220819-21:18:31|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:33.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
