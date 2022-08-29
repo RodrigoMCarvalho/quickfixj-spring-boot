@@ -531,3 +531,534 @@ io.allune.quickfixj.spring.boot.starter.template.SessionNotFoundException: Sessi
 2022-08-19 18:18:31.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=64|49=BANZAI|52=20220819-21:18:31|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
 2022-08-19 18:18:31.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=64|49=BANZAI|52=20220819-21:18:31|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
 2022-08-19 18:18:33.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:36.584  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=65|49=BANZAI|52=20220819-21:18:36|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:36.585  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=65|49=BANZAI|52=20220819-21:18:36|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:38.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:41.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=66|49=BANZAI|52=20220819-21:18:41|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:41.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=66|49=BANZAI|52=20220819-21:18:41|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:43.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:46.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=67|49=BANZAI|52=20220819-21:18:46|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:46.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=67|49=BANZAI|52=20220819-21:18:46|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:48.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:51.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=68|49=BANZAI|52=20220819-21:18:51|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:51.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=68|49=BANZAI|52=20220819-21:18:51|56=EXEC|10=033|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:53.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:56.556  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=69|49=BANZAI|52=20220819-21:18:56|56=EXEC|10=039|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:56.556  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=69|49=BANZAI|52=20220819-21:18:56|56=EXEC|10=039|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:18:58.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:01.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=70|49=BANZAI|52=20220819-21:19:01|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:01.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=70|49=BANZAI|52=20220819-21:19:01|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:03.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:06.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=71|49=BANZAI|52=20220819-21:19:06|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:06.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=71|49=BANZAI|52=20220819-21:19:06|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:08.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:11.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=72|49=BANZAI|52=20220819-21:19:11|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:11.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=72|49=BANZAI|52=20220819-21:19:11|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:13.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:16.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=73|49=BANZAI|52=20220819-21:19:16|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:16.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=73|49=BANZAI|52=20220819-21:19:16|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:18.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:21.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=74|49=BANZAI|52=20220819-21:19:21|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:21.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=74|49=BANZAI|52=20220819-21:19:21|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:23.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:37.598  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : onLogout: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:38.620  INFO 9804 --- [NioProcessor-22] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:57184
+2022-08-19 18:19:39.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=61|35=A|34=75|49=BANZAI|52=20220819-21:19:39|56=EXEC|98=0|108=5|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=61|35=A|34=75|49=BANZAI|52=20220819-21:19:39|56=EXEC|98=0|108=5|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : onLogon: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.574  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=65|35=2|34=76|49=BANZAI|52=20220819-21:19:39|56=EXEC|7=74|16=999999|10=010|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.575  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=65|35=2|34=76|49=BANZAI|52=20220819-21:19:39|56=EXEC|7=74|16=999999|10=010|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:39.577  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:44.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=77|49=BANZAI|52=20220819-21:19:44|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:44.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=77|49=BANZAI|52=20220819-21:19:44|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:44.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:49.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=78|49=BANZAI|52=20220819-21:19:49|56=EXEC|10=042|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:49.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=78|49=BANZAI|52=20220819-21:19:49|56=EXEC|10=042|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:49.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:54.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=79|49=BANZAI|52=20220819-21:19:54|56=EXEC|10=039|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:54.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=79|49=BANZAI|52=20220819-21:19:54|56=EXEC|10=039|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:54.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:59.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=80|49=BANZAI|52=20220819-21:19:59|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:59.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=80|49=BANZAI|52=20220819-21:19:59|56=EXEC|10=036|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:19:59.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:04.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=81|49=BANZAI|52=20220819-21:20:04|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:04.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=81|49=BANZAI|52=20220819-21:20:04|56=EXEC|10=019|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:04.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:09.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=82|49=BANZAI|52=20220819-21:20:09|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:09.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=82|49=BANZAI|52=20220819-21:20:09|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:09.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:14.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=83|49=BANZAI|52=20220819-21:20:14|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:14.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=83|49=BANZAI|52=20220819-21:20:14|56=EXEC|10=022|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:14.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:19.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=84|49=BANZAI|52=20220819-21:20:19|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:19.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=84|49=BANZAI|52=20220819-21:20:19|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:19.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:24.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=85|49=BANZAI|52=20220819-21:20:24|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:24.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=85|49=BANZAI|52=20220819-21:20:24|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:24.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:29.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=86|49=BANZAI|52=20220819-21:20:29|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:29.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=86|49=BANZAI|52=20220819-21:20:29|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:29.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:34.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=87|49=BANZAI|52=20220819-21:20:34|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:34.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=87|49=BANZAI|52=20220819-21:20:34|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:34.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:39.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=88|49=BANZAI|52=20220819-21:20:39|56=EXEC|10=034|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:39.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=88|49=BANZAI|52=20220819-21:20:39|56=EXEC|10=034|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:39.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:44.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=89|49=BANZAI|52=20220819-21:20:44|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:44.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=89|49=BANZAI|52=20220819-21:20:44|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:44.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:49.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=90|49=BANZAI|52=20220819-21:20:49|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:49.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=90|49=BANZAI|52=20220819-21:20:49|56=EXEC|10=028|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:49.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:54.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:54.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=91|49=BANZAI|52=20220819-21:20:54|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:54.794  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=91|49=BANZAI|52=20220819-21:20:54|56=EXEC|10=025|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:59.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:59.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=92|49=BANZAI|52=20220819-21:20:59|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:20:59.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=92|49=BANZAI|52=20220819-21:20:59|56=EXEC|10=031|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:04.799  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:04.809  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=93|49=BANZAI|52=20220819-21:21:04|56=EXEC|10=023|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:04.810  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=93|49=BANZAI|52=20220819-21:21:04|56=EXEC|10=023|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:10.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=94|49=BANZAI|52=20220819-21:21:10|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:10.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=94|49=BANZAI|52=20220819-21:21:10|56=EXEC|10=021|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:10.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:15.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=95|49=BANZAI|52=20220819-21:21:15|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:15.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=95|49=BANZAI|52=20220819-21:21:15|56=EXEC|10=027|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:15.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:20.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=96|49=BANZAI|52=20220819-21:21:20|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:20.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=96|49=BANZAI|52=20220819-21:21:20|56=EXEC|10=024|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:20.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:25.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:25.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=97|49=BANZAI|52=20220819-21:21:25|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:25.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=97|49=BANZAI|52=20220819-21:21:25|56=EXEC|10=030|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:30.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:42.346  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : onLogout: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:43.370  INFO 9804 --- [NioProcessor-24] q.mina.acceptor.AcceptorIoHandler        : MINA session created: local=/127.0.0.1:9877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:57234
+2022-08-19 18:21:43.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=61|35=A|34=98|49=BANZAI|52=20220819-21:21:43|56=EXEC|98=0|108=5|10=029|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:43.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=61|35=A|34=98|49=BANZAI|52=20220819-21:21:43|56=EXEC|98=0|108=5|10=029|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:43.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:43.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : onLogon: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:48.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=99|49=BANZAI|52=20220819-21:21:48|56=EXEC|10=037|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:48.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=50|35=0|34=99|49=BANZAI|52=20220819-21:21:48|56=EXEC|10=037|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:48.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:53.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=100|49=BANZAI|52=20220819-21:21:53|56=EXEC|10=065|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:53.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=100|49=BANZAI|52=20220819-21:21:53|56=EXEC|10=065|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:53.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:58.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=101|49=BANZAI|52=20220819-21:21:58|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:58.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=101|49=BANZAI|52=20220819-21:21:58|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:21:58.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:03.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=102|49=BANZAI|52=20220819-21:22:03|56=EXEC|10=063|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:03.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=102|49=BANZAI|52=20220819-21:22:03|56=EXEC|10=063|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:03.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:08.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=103|49=BANZAI|52=20220819-21:22:08|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:08.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=103|49=BANZAI|52=20220819-21:22:08|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:08.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:13.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=104|49=BANZAI|52=20220819-21:22:13|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:13.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=104|49=BANZAI|52=20220819-21:22:13|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:13.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:18.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=105|49=BANZAI|52=20220819-21:22:18|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:18.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=105|49=BANZAI|52=20220819-21:22:18|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:18.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:23.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=106|49=BANZAI|52=20220819-21:22:23|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:23.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=106|49=BANZAI|52=20220819-21:22:23|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:23.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:28.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=107|49=BANZAI|52=20220819-21:22:28|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:28.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=107|49=BANZAI|52=20220819-21:22:28|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:28.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:33.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=108|49=BANZAI|52=20220819-21:22:33|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:33.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=108|49=BANZAI|52=20220819-21:22:33|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:33.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:38.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=109|49=BANZAI|52=20220819-21:22:38|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:38.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=109|49=BANZAI|52=20220819-21:22:38|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:38.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:43.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=110|49=BANZAI|52=20220819-21:22:43|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:43.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=110|49=BANZAI|52=20220819-21:22:43|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:43.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:48.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=111|49=BANZAI|52=20220819-21:22:48|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:48.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=111|49=BANZAI|52=20220819-21:22:48|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:48.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:53.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=112|49=BANZAI|52=20220819-21:22:53|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:53.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=112|49=BANZAI|52=20220819-21:22:53|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:53.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:58.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=113|49=BANZAI|52=20220819-21:22:58|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:58.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=113|49=BANZAI|52=20220819-21:22:58|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:22:58.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:03.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=114|49=BANZAI|52=20220819-21:23:03|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:03.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=114|49=BANZAI|52=20220819-21:23:03|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:03.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:08.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=115|49=BANZAI|52=20220819-21:23:08|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:08.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=115|49=BANZAI|52=20220819-21:23:08|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:08.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:13.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=116|49=BANZAI|52=20220819-21:23:13|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:13.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=116|49=BANZAI|52=20220819-21:23:13|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:13.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:18.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=117|49=BANZAI|52=20220819-21:23:18|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:18.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=117|49=BANZAI|52=20220819-21:23:18|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:18.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:23.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=118|49=BANZAI|52=20220819-21:23:23|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:23.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=118|49=BANZAI|52=20220819-21:23:23|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:23.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:28.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=119|49=BANZAI|52=20220819-21:23:28|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:28.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=119|49=BANZAI|52=20220819-21:23:28|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:28.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:33.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=120|49=BANZAI|52=20220819-21:23:33|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:33.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=120|49=BANZAI|52=20220819-21:23:33|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:33.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:38.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=121|49=BANZAI|52=20220819-21:23:38|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:38.572  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=121|49=BANZAI|52=20220819-21:23:38|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:38.573  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:43.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=122|49=BANZAI|52=20220819-21:23:43|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:43.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=122|49=BANZAI|52=20220819-21:23:43|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:43.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:48.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=123|49=BANZAI|52=20220819-21:23:48|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:48.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=123|49=BANZAI|52=20220819-21:23:48|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:48.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:53.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=124|49=BANZAI|52=20220819-21:23:53|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:53.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=124|49=BANZAI|52=20220819-21:23:53|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:53.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:58.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=125|49=BANZAI|52=20220819-21:23:58|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:58.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=125|49=BANZAI|52=20220819-21:23:58|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:23:58.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:03.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=126|49=BANZAI|52=20220819-21:24:03|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:03.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=126|49=BANZAI|52=20220819-21:24:03|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:03.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:08.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=127|49=BANZAI|52=20220819-21:24:08|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:08.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=127|49=BANZAI|52=20220819-21:24:08|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:08.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:13.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=128|49=BANZAI|52=20220819-21:24:13|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:13.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=128|49=BANZAI|52=20220819-21:24:13|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:13.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:18.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:18.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=129|49=BANZAI|52=20220819-21:24:18|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:18.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=129|49=BANZAI|52=20220819-21:24:18|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:24.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=130|49=BANZAI|52=20220819-21:24:24|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:24.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=130|49=BANZAI|52=20220819-21:24:24|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:24.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:29.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=131|49=BANZAI|52=20220819-21:24:29|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:29.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=131|49=BANZAI|52=20220819-21:24:29|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:29.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:34.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=132|49=BANZAI|52=20220819-21:24:34|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:34.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=132|49=BANZAI|52=20220819-21:24:34|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:34.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:39.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=133|49=BANZAI|52=20220819-21:24:39|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:39.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=133|49=BANZAI|52=20220819-21:24:39|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:39.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:44.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=134|49=BANZAI|52=20220819-21:24:44|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:44.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=134|49=BANZAI|52=20220819-21:24:44|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:44.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:49.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:49.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=135|49=BANZAI|52=20220819-21:24:49|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:49.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=135|49=BANZAI|52=20220819-21:24:49|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:54.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:54.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=136|49=BANZAI|52=20220819-21:24:54|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:54.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=136|49=BANZAI|52=20220819-21:24:54|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:59.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:59.792  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=137|49=BANZAI|52=20220819-21:24:59|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:24:59.792  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=137|49=BANZAI|52=20220819-21:24:59|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:04.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:04.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=138|49=BANZAI|52=20220819-21:25:04|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:04.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=138|49=BANZAI|52=20220819-21:25:04|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:09.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:09.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=139|49=BANZAI|52=20220819-21:25:09|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:09.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=139|49=BANZAI|52=20220819-21:25:09|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:14.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:14.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=140|49=BANZAI|52=20220819-21:25:14|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:14.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=140|49=BANZAI|52=20220819-21:25:14|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:19.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:19.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=141|49=BANZAI|52=20220819-21:25:19|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:19.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=141|49=BANZAI|52=20220819-21:25:19|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:24.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:24.797  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=142|49=BANZAI|52=20220819-21:25:24|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:24.797  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=142|49=BANZAI|52=20220819-21:25:24|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:29.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:29.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=143|49=BANZAI|52=20220819-21:25:29|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:29.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=143|49=BANZAI|52=20220819-21:25:29|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:35.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=144|49=BANZAI|52=20220819-21:25:35|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:35.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=144|49=BANZAI|52=20220819-21:25:35|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:35.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:40.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=145|49=BANZAI|52=20220819-21:25:40|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:40.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=145|49=BANZAI|52=20220819-21:25:40|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:40.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:45.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:45.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=146|49=BANZAI|52=20220819-21:25:45|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:45.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=146|49=BANZAI|52=20220819-21:25:45|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:50.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:50.792  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=147|49=BANZAI|52=20220819-21:25:50|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:50.792  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=147|49=BANZAI|52=20220819-21:25:50|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:55.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:55.784  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=148|49=BANZAI|52=20220819-21:25:55|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:25:55.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=148|49=BANZAI|52=20220819-21:25:55|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:00.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:00.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=149|49=BANZAI|52=20220819-21:26:00|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:00.786  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=149|49=BANZAI|52=20220819-21:26:00|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:05.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:05.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=150|49=BANZAI|52=20220819-21:26:05|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:05.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=150|49=BANZAI|52=20220819-21:26:05|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:10.793  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:10.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=151|49=BANZAI|52=20220819-21:26:10|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:10.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=151|49=BANZAI|52=20220819-21:26:10|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:16.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=152|49=BANZAI|52=20220819-21:26:16|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:16.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=152|49=BANZAI|52=20220819-21:26:16|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:16.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:21.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=153|49=BANZAI|52=20220819-21:26:21|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:21.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=153|49=BANZAI|52=20220819-21:26:21|56=EXEC|10=073|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:21.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:26.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=154|49=BANZAI|52=20220819-21:26:26|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:26.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=154|49=BANZAI|52=20220819-21:26:26|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:26.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:31.556  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=155|49=BANZAI|52=20220819-21:26:31|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:31.556  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=155|49=BANZAI|52=20220819-21:26:31|56=EXEC|10=076|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:31.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:36.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=156|49=BANZAI|52=20220819-21:26:36|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:36.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=156|49=BANZAI|52=20220819-21:26:36|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:36.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:41.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=157|49=BANZAI|52=20220819-21:26:41|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:41.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=157|49=BANZAI|52=20220819-21:26:41|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:41.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:46.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=158|49=BANZAI|52=20220819-21:26:46|56=EXEC|10=085|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:46.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=158|49=BANZAI|52=20220819-21:26:46|56=EXEC|10=085|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:46.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:51.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=159|49=BANZAI|52=20220819-21:26:51|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:51.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=159|49=BANZAI|52=20220819-21:26:51|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:51.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=160|49=BANZAI|52=20220819-21:26:56|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=160|49=BANZAI|52=20220819-21:26:56|56=EXEC|10=079|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:26:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:01.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=161|49=BANZAI|52=20220819-21:27:01|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:01.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=161|49=BANZAI|52=20220819-21:27:01|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:01.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:06.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=162|49=BANZAI|52=20220819-21:27:06|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:06.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=162|49=BANZAI|52=20220819-21:27:06|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:06.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:11.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=163|49=BANZAI|52=20220819-21:27:11|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:11.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=163|49=BANZAI|52=20220819-21:27:11|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:11.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:16.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=164|49=BANZAI|52=20220819-21:27:16|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:16.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=164|49=BANZAI|52=20220819-21:27:16|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:16.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:21.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=165|49=BANZAI|52=20220819-21:27:21|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:21.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=165|49=BANZAI|52=20220819-21:27:21|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:21.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:26.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=166|49=BANZAI|52=20220819-21:27:26|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:26.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=166|49=BANZAI|52=20220819-21:27:26|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:26.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:31.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=167|49=BANZAI|52=20220819-21:27:31|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:31.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=167|49=BANZAI|52=20220819-21:27:31|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:31.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:36.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=168|49=BANZAI|52=20220819-21:27:36|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:36.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=168|49=BANZAI|52=20220819-21:27:36|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:36.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:41.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=169|49=BANZAI|52=20220819-21:27:41|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:41.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=169|49=BANZAI|52=20220819-21:27:41|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:41.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:46.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=170|49=BANZAI|52=20220819-21:27:46|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:46.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=170|49=BANZAI|52=20220819-21:27:46|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:46.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:51.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=171|49=BANZAI|52=20220819-21:27:51|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:51.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=171|49=BANZAI|52=20220819-21:27:51|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:51.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=172|49=BANZAI|52=20220819-21:27:56|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=172|49=BANZAI|52=20220819-21:27:56|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:27:56.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:01.789  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:01.792  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=173|49=BANZAI|52=20220819-21:28:01|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:01.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=173|49=BANZAI|52=20220819-21:28:01|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:06.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:06.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=174|49=BANZAI|52=20220819-21:28:06|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:06.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=174|49=BANZAI|52=20220819-21:28:06|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:11.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:11.794  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=175|49=BANZAI|52=20220819-21:28:11|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:11.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=175|49=BANZAI|52=20220819-21:28:11|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:16.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:16.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=176|49=BANZAI|52=20220819-21:28:16|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:16.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=176|49=BANZAI|52=20220819-21:28:16|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:21.780  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:21.782  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=177|49=BANZAI|52=20220819-21:28:21|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:21.783  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=177|49=BANZAI|52=20220819-21:28:21|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:26.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:26.784  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=178|49=BANZAI|52=20220819-21:28:26|56=EXEC|10=087|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:26.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=178|49=BANZAI|52=20220819-21:28:26|56=EXEC|10=087|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:31.784  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:31.786  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=179|49=BANZAI|52=20220819-21:28:31|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:31.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=179|49=BANZAI|52=20220819-21:28:31|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:36.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:36.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=180|49=BANZAI|52=20220819-21:28:36|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:36.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=180|49=BANZAI|52=20220819-21:28:36|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:41.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:41.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=181|49=BANZAI|52=20220819-21:28:41|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:41.794  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=181|49=BANZAI|52=20220819-21:28:41|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:46.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:46.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=182|49=BANZAI|52=20220819-21:28:46|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:46.794  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=182|49=BANZAI|52=20220819-21:28:46|56=EXEC|10=084|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:52.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=183|49=BANZAI|52=20220819-21:28:52|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:52.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=183|49=BANZAI|52=20220819-21:28:52|56=EXEC|10=082|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:52.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:57.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=184|49=BANZAI|52=20220819-21:28:57|56=EXEC|10=088|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:57.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=184|49=BANZAI|52=20220819-21:28:57|56=EXEC|10=088|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:28:57.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:02.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=185|49=BANZAI|52=20220819-21:29:02|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:02.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=185|49=BANZAI|52=20220819-21:29:02|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:02.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:07.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=186|49=BANZAI|52=20220819-21:29:07|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:07.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=186|49=BANZAI|52=20220819-21:29:07|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:07.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:12.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=187|49=BANZAI|52=20220819-21:29:12|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:12.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=187|49=BANZAI|52=20220819-21:29:12|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:12.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:17.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=188|49=BANZAI|52=20220819-21:29:17|56=EXEC|10=089|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:17.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=188|49=BANZAI|52=20220819-21:29:17|56=EXEC|10=089|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:17.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:22.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=189|49=BANZAI|52=20220819-21:29:22|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:22.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=189|49=BANZAI|52=20220819-21:29:22|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:22.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:27.790  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:27.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=190|49=BANZAI|52=20220819-21:29:27|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:27.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=190|49=BANZAI|52=20220819-21:29:27|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:32.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:32.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=191|49=BANZAI|52=20220819-21:29:32|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:32.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=191|49=BANZAI|52=20220819-21:29:32|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:37.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:37.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=192|49=BANZAI|52=20220819-21:29:37|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:37.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=192|49=BANZAI|52=20220819-21:29:37|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:42.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:42.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=193|49=BANZAI|52=20220819-21:29:42|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:42.791  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=193|49=BANZAI|52=20220819-21:29:42|56=EXEC|10=083|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:47.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:47.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=194|49=BANZAI|52=20220819-21:29:47|56=EXEC|10=089|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:47.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=194|49=BANZAI|52=20220819-21:29:47|56=EXEC|10=089|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:52.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:52.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=195|49=BANZAI|52=20220819-21:29:52|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:52.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=195|49=BANZAI|52=20220819-21:29:52|56=EXEC|10=086|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:57.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:57.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=196|49=BANZAI|52=20220819-21:29:57|56=EXEC|10=092|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:29:57.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=196|49=BANZAI|52=20220819-21:29:57|56=EXEC|10=092|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:02.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:02.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=197|49=BANZAI|52=20220819-21:30:02|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:02.795  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=197|49=BANZAI|52=20220819-21:30:02|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:07.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:07.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=198|49=BANZAI|52=20220819-21:30:07|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:07.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=198|49=BANZAI|52=20220819-21:30:07|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:12.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:12.783  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=199|49=BANZAI|52=20220819-21:30:12|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:12.784  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=199|49=BANZAI|52=20220819-21:30:12|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:17.780  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:17.783  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=200|49=BANZAI|52=20220819-21:30:17|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:17.783  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=200|49=BANZAI|52=20220819-21:30:17|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:22.779  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:22.781  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=201|49=BANZAI|52=20220819-21:30:22|56=EXEC|10=063|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:22.782  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=201|49=BANZAI|52=20220819-21:30:22|56=EXEC|10=063|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:27.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:27.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=202|49=BANZAI|52=20220819-21:30:27|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:27.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=202|49=BANZAI|52=20220819-21:30:27|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:32.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:32.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=203|49=BANZAI|52=20220819-21:30:32|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:32.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=203|49=BANZAI|52=20220819-21:30:32|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:37.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:37.797  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=204|49=BANZAI|52=20220819-21:30:37|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:37.797  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=204|49=BANZAI|52=20220819-21:30:37|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:42.794  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:42.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=205|49=BANZAI|52=20220819-21:30:42|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:42.796  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=205|49=BANZAI|52=20220819-21:30:42|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:47.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:47.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=206|49=BANZAI|52=20220819-21:30:47|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:47.789  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=206|49=BANZAI|52=20220819-21:30:47|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:52.781  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:52.784  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=207|49=BANZAI|52=20220819-21:30:52|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:52.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=207|49=BANZAI|52=20220819-21:30:52|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:57.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:57.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=208|49=BANZAI|52=20220819-21:30:57|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:30:57.793  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=208|49=BANZAI|52=20220819-21:30:57|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:02.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:02.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=209|49=BANZAI|52=20220819-21:31:02|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:02.788  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=209|49=BANZAI|52=20220819-21:31:02|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:07.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:07.784  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=210|49=BANZAI|52=20220819-21:31:07|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:07.785  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=210|49=BANZAI|52=20220819-21:31:07|56=EXEC|10=067|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:12.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:12.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=211|49=BANZAI|52=20220819-21:31:12|56=EXEC|10=064|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:12.787  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=211|49=BANZAI|52=20220819-21:31:12|56=EXEC|10=064|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:17.795  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:17.798  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=212|49=BANZAI|52=20220819-21:31:17|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:17.798  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=212|49=BANZAI|52=20220819-21:31:17|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:23.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=213|49=BANZAI|52=20220819-21:31:23|56=EXEC|10=068|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:23.565  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=213|49=BANZAI|52=20220819-21:31:23|56=EXEC|10=068|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:23.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:28.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=214|49=BANZAI|52=20220819-21:31:28|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:28.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=214|49=BANZAI|52=20220819-21:31:28|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:28.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:33.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=215|49=BANZAI|52=20220819-21:31:33|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:33.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=215|49=BANZAI|52=20220819-21:31:33|56=EXEC|10=071|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:33.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:38.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=216|49=BANZAI|52=20220819-21:31:38|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:38.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=216|49=BANZAI|52=20220819-21:31:38|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:38.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:43.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=217|49=BANZAI|52=20220819-21:31:43|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:43.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=217|49=BANZAI|52=20220819-21:31:43|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:43.562  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:48.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=218|49=BANZAI|52=20220819-21:31:48|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:48.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=218|49=BANZAI|52=20220819-21:31:48|56=EXEC|10=080|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:48.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:53.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=219|49=BANZAI|52=20220819-21:31:53|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:53.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=219|49=BANZAI|52=20220819-21:31:53|56=EXEC|10=077|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:53.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:58.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=220|49=BANZAI|52=20220819-21:31:58|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:58.559  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=220|49=BANZAI|52=20220819-21:31:58|56=EXEC|10=074|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:31:58.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:03.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=221|49=BANZAI|52=20220819-21:32:03|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:03.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=221|49=BANZAI|52=20220819-21:32:03|56=EXEC|10=066|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:03.788  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:08.566  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=222|49=BANZAI|52=20220819-21:32:08|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:08.567  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=222|49=BANZAI|52=20220819-21:32:08|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:08.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:13.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=223|49=BANZAI|52=20220819-21:32:13|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:13.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=223|49=BANZAI|52=20220819-21:32:13|56=EXEC|10=069|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:13.791  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:18.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=224|49=BANZAI|52=20220819-21:32:18|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:18.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=224|49=BANZAI|52=20220819-21:32:18|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:18.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:23.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=225|49=BANZAI|52=20220819-21:32:23|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:23.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=225|49=BANZAI|52=20220819-21:32:23|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:23.780  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:28.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=226|49=BANZAI|52=20220819-21:32:28|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:28.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=226|49=BANZAI|52=20220819-21:32:28|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:28.782  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:33.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=227|49=BANZAI|52=20220819-21:32:33|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:33.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=227|49=BANZAI|52=20220819-21:32:33|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:33.785  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:38.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=228|49=BANZAI|52=20220819-21:32:38|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:38.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=228|49=BANZAI|52=20220819-21:32:38|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:38.783  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:43.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=229|49=BANZAI|52=20220819-21:32:43|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:43.568  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=229|49=BANZAI|52=20220819-21:32:43|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:43.787  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:48.560  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=230|49=BANZAI|52=20220819-21:32:48|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:48.561  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=230|49=BANZAI|52=20220819-21:32:48|56=EXEC|10=075|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:48.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:53.557  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=231|49=BANZAI|52=20220819-21:32:53|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:53.558  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=231|49=BANZAI|52=20220819-21:32:53|56=EXEC|10=072|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:53.792  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:58.569  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=232|49=BANZAI|52=20220819-21:32:58|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:58.570  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=232|49=BANZAI|52=20220819-21:32:58|56=EXEC|10=078|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:32:58.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:03.571  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=233|49=BANZAI|52=20220819-21:33:03|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:03.639  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=0|34=233|49=BANZAI|52=20220819-21:33:03|56=EXEC|10=070|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:03.786  INFO 9804 --- [QFJ Timer] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:07.817  INFO 9804 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 18:33:07.818  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : Logging out all sessions
+2022-08-19 18:33:08.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=5|34=234|49=BANZAI|52=20220819-21:33:08|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:08.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : fromAdmin: Message=8=FIX.4.1|9=51|35=5|34=234|49=BANZAI|52=20220819-21:33:08|56=EXEC|10=081|, SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:08.563  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : toAdmin: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:08.564  INFO 9804 --- [QFJ Message Processor] c.r.testefix.listener.TesteFixListener   : onLogout: SessionId=FIX.4.1:EXEC->BANZAI
+2022-08-19 18:33:08.577  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.ThreadedSocketInitiator         : SessionTimer canceled
+2022-08-19 18:33:08.577  INFO 9804 --- [SpringApplicationShutdownHook] i.a.q.s.b.s.connection.ConnectorManager  : stop: Stopping ConnectorManager. Force disconnect=false
+2022-08-19 18:33:08.577  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : Logging out all sessions
+2022-08-19 18:33:08.582  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9878
+2022-08-19 18:33:08.587  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9880
+2022-08-19 18:33:08.591  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9881
+2022-08-19 18:33:08.596  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9877
+2022-08-19 18:33:08.600  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9876
+2022-08-19 18:33:08.603  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : No longer accepting connections on /0:0:0:0:0:0:0:0:9879
+2022-08-19 18:33:08.603  INFO 9804 --- [SpringApplicationShutdownHook] quickfix.SocketAcceptor                  : SessionTimer canceled
+2022-08-19 18:33:08.604  INFO 9804 --- [QFJ Message Processor] quickfix.SocketAcceptor                  : Stopped QFJ Message Processor
